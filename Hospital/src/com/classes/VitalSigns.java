@@ -8,7 +8,7 @@ package com.classes;
  *
  * @author dotaw
  */
-public class VitalSigns {
+public class VitalSigns extends Patient{
     private int heartRate;
     private int height;
     private int bloodPressure;
