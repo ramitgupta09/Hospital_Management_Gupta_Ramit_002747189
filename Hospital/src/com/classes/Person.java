@@ -10,11 +10,38 @@ import java.util.Date;
  *
  * @author dotaw
  */
-public class Person {
+public class Person extends Hospital{
     public String username;
     public String password;
     public String role;
     public String mail;
+    private String name;
+    private String userAddress;
+    private int zipCode;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUserAddress() {
+        return userAddress;
+    }
+
+    public void setUserAddress(String userAddress) {
+        this.userAddress = userAddress;
+    }
+
+    public int getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(int zipCode) {
+        this.zipCode = zipCode;
+    }
     
     public String getAccountStatus() {
         return AccountStatus;
