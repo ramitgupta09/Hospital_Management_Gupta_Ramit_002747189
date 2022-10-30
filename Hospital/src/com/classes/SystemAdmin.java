@@ -8,7 +8,7 @@ package com.classes;
  *
  * @author dotaw
  */
-public class SystemAdmin {
+public class SystemAdmin extends Person{
     private String adminID;
 
     public String getAdminID() {
