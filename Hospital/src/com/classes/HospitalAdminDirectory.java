@@ -14,7 +14,7 @@ public class HospitalAdminDirectory {
     private ArrayList<HospitalAdmin> hosAdmin = new ArrayList<>();
     
     public HospitalAdminDirectory(){
-    this.hosAdmin = new ArrayList<>();
+        this.hosAdmin = new ArrayList<>();
     }
 
     public ArrayList<HospitalAdmin> getHosAdmin() {
@@ -26,8 +26,8 @@ public class HospitalAdminDirectory {
     }
     
     public HospitalAdmin addHospitalAdmin(){
-    HospitalAdmin hoAd = new HospitalAdmin();
-    hosAdmin.add(hoAd);
-    return hoAd;
+        HospitalAdmin hoAd = new HospitalAdmin();
+        hosAdmin.add(hoAd);
+        return hoAd;
     }
 }

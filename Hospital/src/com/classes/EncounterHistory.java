@@ -30,4 +30,8 @@ public class EncounterHistory {
         encounterHistory.add(encounter);
         return encounter;
     }
+    
+//    public void deleteEncounter(Encounter encounter){
+//        encounterHistory.remove(encounter);
+//    }
 }

@@ -4,7 +4,10 @@
  */
 package com.classes;
 
+//import static java.lang.constant.ConstantDescs.NULL;
 import java.util.Date;
+import javax.swing.JOptionPane;
+import java.util.regex.Matcher;
 
 /**
  *
@@ -18,6 +21,10 @@ public class Person extends Hospital{
     private String name;
     private String userAddress;
     private int zipCode;
+    private int phone;
+    private String gender;
+    private Date dateOfBirth;
+    private String AccountStatus = "Active";
 
     public String getName() {
         return name;
@@ -26,7 +33,23 @@ public class Person extends Hospital{
     public void setName(String name) {
         this.name = name;
     }
+    
+//    public void setName(String name) {
+//        if(name != null && name.matches("^[A-Za-z]\\w{2,29}$")){
+//            this.name = name;
+//        }else{
+//            JOptionPane.showMessageDialog(null,"Enter a valid name");
+//        }
+//    }
 
+//    public void setName(String name) {
+//        if(name != null && name.matches("^[\\p{L} .'-]+$")){
+//            this.name = name;
+//        }else{
+//            JOptionPane.showMessageDialog(null,"Enter a valid name");
+//        }
+//    }
+    
     public String getUserAddress() {
         return userAddress;
     }
@@ -43,6 +66,18 @@ public class Person extends Hospital{
         this.zipCode = zipCode;
     }
     
+//    public void setZipCode(int zipCode) {
+//        String zip = String.valueOf(zipCode);
+//        if(zip == null ){
+//            JOptionPane.showMessageDialog(null, "Enter a valid ZipCode");
+//        }else{
+//            if(zip.matches("^[0-9]{5}(?:-[0-9]{4})?$")){
+//                this.zipCode = zipCode;
+//            }
+//            }
+//        }
+//    }
+    
     public String getAccountStatus() {
         return AccountStatus;
     }
@@ -50,12 +85,7 @@ public class Person extends Hospital{
     public void setAccountStatus(String AccountStatus) {
         this.AccountStatus = AccountStatus;
     }
-    private int phone;
-    private String gender;
-    private Date dateOfBirth;
-    private String AccountStatus = "Active";
-
-
+   
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
@@ -76,6 +106,13 @@ public class Person extends Hospital{
         return password;
     }
 
+//    public void setPassword(String password) {
+//        if(password != null && password.matches("^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,20}$")){
+//            this.password = password;
+//        }else{
+//            JOptionPane.showMessageDialog(null, "Invalid Password");
+//        }
+//    }
     public void setPassword(String password) {
         this.password = password;
     }
@@ -95,6 +132,18 @@ public class Person extends Hospital{
     public void setMail(String mail) {
         this.mail = mail;
     }
+    
+//    public String setMail(){
+//        this.mail = mail;
+//    }
+//    public void setMail(String mail) {
+//        if((mail != null) && mail.matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$")){
+//           this.mail = mail; 
+//        }
+//        else{
+//            JOptionPane.showMessageDialog(null,"Enter a valid email address");
+//        }
+//    }
 
     public int getPhone() {
         return phone;
@@ -103,6 +152,15 @@ public class Person extends Hospital{
     public void setPhone(int phone) {
         this.phone = phone;
     }
+    
+//    public void setPhone(int phone) {
+//        String cell = String.valueOf(phone);
+//        if((cell != null) && cell.matches("^((\\\\(\\\\d{3}\\\\))|\\\\d{3})[- ]?\\\\d{3}[- ]?\\\\d{4}$")){
+//            this.phone = phone;
+//        } else {
+//            JOptionPane.showMessageDialog(null, "Enter a valid Phone Number");
+//        }
+//    }
 
     public String getGender() {
         return gender;
@@ -111,4 +169,11 @@ public class Person extends Hospital{
     public void setGender(String gender) {
         this.gender = gender;
     }
+//    public void setGender(String gender) {
+//        if(gender != null &&)){
+//            
+//        }else{
+//            
+//        }
+//    }
 }
